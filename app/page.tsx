@@ -1,14 +1,15 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Navbar from "./_components/Navbar";
 import Hero from "./_components/Hero";
 import BrandLogos from "./_components/BrandLogos";
+import Services from "./_components/Services";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white max-w-[1440px] mx-auto font-[family-name:var(--font-open-sans)]">
-      <main className="flex-grow relative bg-white z-10" >
+      <main className="flex-grow relative bg-white z-10">
         <header className="max-w-[1200px] mx-auto">
           <Navbar />
         </header>
@@ -26,11 +27,22 @@ export default function Home() {
         <BrandLogos />
       </main>
 
-      <footer className="bg-gray-100 py-6 text-center">
-        <p className="text-sm text-gray-500">
-          © 2025 Boldo Template. All rights reserved.
-        </p>
-      </footer>
+      <Services />
+
+      <section>
+        <div className="max-w-[1200px] mx-auto">
+          <div className="text-center">
+            <h2 className="text-5xl leading-[72px] font-manrope mt-3 mb-8 max-w-[842px] mx-auto">
+              Handshake infographic mass market crowdfunding iteration.
+            </h2>
+            <p className="text-[#777777] mb-14 font-sans">
+              Funding handshake buyer business-to-business metrics iPad
+              partnership. First mover advantage innovator success deployment
+              non-disclosure.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
