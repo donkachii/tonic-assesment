@@ -11,6 +11,15 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        primary: {
+          default: "#0A2640",
+        },
+        tertiary: "#65E4A3",
+      },
+      fontFamily: {
+        sans: ["var(--font-open-sans)", "sans-serif"],
+        manrope: ["var(--font-manrope)", "manrope"],
       },
     },
   },
