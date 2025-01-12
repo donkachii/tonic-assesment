@@ -12,9 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
 
-        primary: {
-          default: "#0A2640",
-        },
+        primary: "#0A2640",
+        secondary: "#FFFFFF",
         tertiary: "#65E4A3",
       },
       fontFamily: {
