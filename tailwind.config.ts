@@ -20,6 +20,9 @@ export default {
         sans: ["var(--font-open-sans)", "sans-serif"],
         manrope: ["var(--font-manrope)", "manrope"],
       },
+      boxShadow: {
+        custom: "0px 4px 32px 0px #00000014",
+      },
     },
   },
   plugins: [],

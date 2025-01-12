@@ -30,7 +30,7 @@ const Services = () => {
     <section className="bg-primary text-white py-20 font-sans">
       <div className="max-w-[1200px] mx-auto text-center">
         <h4 className="text-xl">Our Services</h4>
-        <h2 className="text-5xl leading-[72px] font-manrope mt-3 mb-8 max-w-[842px] mx-auto">
+        <h2 className="text-5xl leading-[72px] font-manrope mt-3 mb-14 max-w-[842px] mx-auto">
           Handshake infographic mass market crowdfunding iteration.
         </h2>
 
