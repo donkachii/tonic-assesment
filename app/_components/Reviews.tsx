@@ -1,32 +1,13 @@
 import React from "react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
+import {
+  ArrowLeftCircleIcon,
+  ArrowRightCircleIcon,
+} from "@heroicons/react/16/solid";
+import Image from "next/image";
 
-interface TestimonialProps {
-  quote: string;
-  title: string;
-  name: string;
-}
-
-const testimonials: TestimonialProps[] = [
-  {
-    quote: `"Buyer buzz partner network disruptive non-disclosure agreement business"`,
-    name: "Albus Dumbledore",
-    title: "Manager @ Hogwarts",
-  },
-  {
-    quote: `"Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor."`,
-    name: "Severus Snape",
-    title: "Manager @ Slytherin",
-  },
-  {
-    quote: `"Release facebook responsive web design business model canvas seed money monetization."`,
-    name: "Harry Potter",
-    title: "Team Leader @ Gryffindor",
-  },
-];
 const Reviews = () => {
   return (
     <section className="bg-primary text-white py-20 font-sans">
@@ -37,19 +18,17 @@ const Reviews = () => {
               An enterprise template to ramp up your company website
             </h2>
           </div>
-          <div className="absolute right-0 top-0 bottom-0 flex space-x-2">
-            <button
-              className="swiper-button-next p-2 rounded-full hover:bg-[#0b1b3d]"
-              aria-label="Next"
-            >
-              <ChevronRightIcon className="w-5 h-5" />
-            </button>
-            <button
-              className="swiper-button-prev p-2 rounded-full hover:bg-[#0b1b3d]"
-              aria-label="Previous"
-            >
-              <ChevronLeftIcon className="w-5 h-5" />
-            </button>
+          <div className="">
+            <div className="absolute top-20 bottom-0 right-28 z-10">
+              <button className="p-2" aria-label="Previous">
+                <ArrowLeftCircleIcon className="w-16 h-16" />
+              </button>
+            </div>
+            <div className="absolute top-20 right-0 z-10">
+              <button className="p-2" aria-label="Next">
+                <ArrowRightCircleIcon className="w-16 h-16" />
+              </button>
+            </div>
           </div>
 
           <Swiper
@@ -58,43 +37,92 @@ const Reviews = () => {
               prevEl: ".swiper-button-prev",
               nextEl: ".swiper-button-next",
             }}
-            spaceBetween={50}
+            spaceBetween={60}
             slidesPerView={3}
           >
             <SwiperSlide>
               <div className="p-8 bg-white text-black rounded-lg shadow-lg">
-                <p className="text-xl">
-                  “Buyer buzz partner network disruptive non-disclosure
-                  agreement business”
+                <p className="text-2xl mb-8">
+                  &ldquo;Buyer buzz partner network disruptive non-disclosure
+                  agreement business.&rdquo;
                 </p>
-                <p className="mt-4 text-right">- John Doe, CEO</p>
+
+                <div className="flex items-center gap-4 text-primary">
+                  <Image
+                    src="/assets/images/testimonial_avatar_1.png"
+                    alt="Testimonial Avatar 1"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Albus Dumbledore</p>
+                    <p className="text-sm">Manager @ Hogwarts</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="p-8 bg-white text-black rounded-lg shadow-lg">
-                <p className="text-xl">
-                  “Learning curve infrastructure value proposition advisor
-                  strategy user experience hypotheses investor."
+                <p className="text-2xl  mb-8">
+                  &ldquo;Learning curve infrastructure value proposition advisor
+                  strategy user experience hypotheses investor.&rdquo;
                 </p>
-                <p className="mt-4 text-right">- Jane Smith, CTO</p>
+                <div className="flex items-center gap-4 text-primary">
+                  <Image
+                    src="/assets/images/testimonial_avatar_2.png"
+                    alt="Testimonial Avatar 1"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Severus Snape</p>
+                    <p className="text-sm">Manager @ Slytherin</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="p-8 bg-white text-black rounded-lg shadow-lg">
-                <p className="text-xl">
-                  “Release facebook responsive web design business model canvas
-                  seed money monetization."
+                <p className="text-2xl  mb-8">
+                  &ldquo;Release facebook responsive web design business model
+                  canvas seed money monetization.&rdquo;
                 </p>
-                <p className="mt-4 text-right">- Jane Smith, CTO</p>
+                <div className="flex items-center gap-4 text-primary">
+                  <Image
+                    src="/assets/images/testimonial_avatar_3.png"
+                    alt="Testimonial Avatar 1"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Harry Potter</p>
+                    <p className="text-sm">Team Leader @ Gryffindor</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="p-8 bg-white text-black rounded-lg shadow-lg">
-                <p className="text-xl">
-                  “Release facebook responsive web design business model canvas
-                  seed money monetization."
+                <p className="text-2xl  mb-8">
+                  &ldquo;Release facebook responsive web design business model
+                  canvas seed money monetization.&rdquo;
                 </p>
-                <p className="mt-4 text-right">- Jane Smith, CTO</p>
+                <div className="flex items-center gap-4 text-primary">
+                  <Image
+                    src="/assets/images/testimonial_avatar_3.png"
+                    alt="Testimonial Avatar 1"
+                    width={48}
+                    height={48}
+                    className="rounded-full object-cover"
+                  />
+                  <div>
+                    <p className="font-semibold">Harry Potter</p>
+                    <p className="text-sm">Team Leader @ Gryffindor</p>
+                  </div>
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>

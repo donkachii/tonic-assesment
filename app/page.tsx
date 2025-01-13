@@ -1,12 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Navbar from "./_components/Navbar";
 import Hero from "./_components/Hero";
 import BrandLogos from "./_components/BrandLogos";
 import Services from "./_components/Services";
 import CustomerInsight from "./_components/CustomerInsight";
 import Reviews from "./_components/Reviews";
+import Faqs from "./_components/Faqs";
+import BlogHome from "./_components/BlogHome";
+import Subscribe from "./_components/Subscribe";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (
@@ -21,7 +24,7 @@ export default function Home() {
           viewBox="0 0 623 504"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute top-0 right-0 -z-10 md:hidden"
+          className="absolute top-0 right-0 -z-10"
         >
           <circle cx="646.5" cy="-142.5" r="646.5" fill="#F1F1F1" />
         </svg>
@@ -30,7 +33,11 @@ export default function Home() {
       </main>
       <Services />
       <CustomerInsight />
-      {/* <Reviews /> */}
+      <Reviews />
+      <Faqs />
+      <BlogHome />
+      <Subscribe />
+      <Footer />
     </div>
   );
 }

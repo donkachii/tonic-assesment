@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white md:bg-transparent">
       <div className="py-4 px-8 lg:px-10 lg:mt-10 xl:px-0 xl:mt-14 xl:py-0 xl:pb-4">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">

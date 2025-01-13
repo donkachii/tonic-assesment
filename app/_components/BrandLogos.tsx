@@ -18,7 +18,7 @@ const brandLogos: BrandLogo[] = [
 
 const BrandLogos = () => {
   return (
-    <section className="py-8 bg-white mt-14">
+    <section className="py-8 bg-white my-14">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className="">
           <div className="flex items-center justify-center gap-14 overflow-x-auto scrollbar-hide">

@@ -4,7 +4,7 @@ import { CheckCircleIcon } from "@heroicons/react/16/solid";
 import { EyeIcon, PencilIcon, SunIcon } from "@heroicons/react/24/outline";
 
 interface InsightProps {
-  icon: any;
+  icon: React.ReactNode;
   text: string;
 }
 
